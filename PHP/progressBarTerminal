@@ -1,12 +1,15 @@
-class progressBar
+class ProgressBar
 {
     /**
+     *
+     * OBS! Found in a stackoverflow post.
+     *
      * show a status bar in the console
      *
      * <code>
      * for($x=1;$x<=100;$x++){
      *
-     *     show_status($x, 100);
+     *     ProgressBar::show_status($x, 100);
      *
      *     usleep(100000);
      *
