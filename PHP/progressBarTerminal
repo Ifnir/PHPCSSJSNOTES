@@ -35,9 +35,9 @@ class ProgressBar
 
         $now = time();
 
-        $perc = (double) ($done/$total);
+        $perc = (double) ($done / $total);
 
-        $bar = floor($perc*$size);
+        $bar = floor($perc * $size);
 
         $status_bar = "\r[";
 
@@ -53,9 +53,9 @@ class ProgressBar
 
         $disp = number_format($perc * 100, 0);
 
-        $status_bar .= "] $disp%  $done/$total";
+        $status_bar .= "] $disp % $done/$total";
 
-        $rate = ($now-$start_time) / $done;
+        $rate = ($now - $start_time) / $done;
         $left = $total - $done;
         $eta = round($rate * $left, 2);
 
